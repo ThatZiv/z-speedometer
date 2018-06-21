@@ -1,7 +1,7 @@
 -- Made by Zua @ https://github.com/thatziv/z-speedometer -- Discord: http://zivinity.cf/discord
 
 -----------------------------USER--CONFIG-----------------------------------------------
-local locationOnscreen = 'bottom-left' --[[ Types -> bottom-left, bottom-right, top-right of the screen ]]
+local locationOnscreen = 'bottom-left' --[[ Types -> 'bottom-left', 'bottom-right', 'top-right' of the screen ]]
 local legalSpeed = 70 -- This speed limit will trigger red number and the warning speed message
 local mph = true -- change to false if you want KPH and Make sure you change the type var to 'kph' in case you made mph = false 
 local type = 'MPH'
