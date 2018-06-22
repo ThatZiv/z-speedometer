@@ -13,6 +13,7 @@
 * MPH or KPH
 * Font
 * Speed limit warning message *(toggle-able)*
+* Discord Rich Presence
 ## __Support__
 Join my [discord](https://discordapp.com/invite/yWddFpQ) and ask for support in **#support**
 ## __Screenshots__
