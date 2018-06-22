@@ -8,6 +8,7 @@ local type = 'MPH'
 local typeFont = 'default' --[[ Types -> 'default': The best one, 'fancy' : Cursive and looks likes pure shit but the fivem community has shit taste so i left it here for you shitters, 'normal': fancy, but not cursive and also looks like poop ]]
 local warningSpeedMsg = false --This meessage will stay for ~10-15 seconds when past the speed limit (legalspeed)
 local warningSpeedMsgSTRING = "Warning: ~w~You are above the speed limit."
+local RichPresence = true -- Makes a discord rich presence with Fivem that tells the speed
 ----------------------------------------------------------------------------------------
 if(locationOnscreen == 'bottom-right') then
     x1 = 0.9
@@ -67,6 +68,11 @@ Citizen.CreateThread(function()
         end
             if(IsPedInAnyVehicle(GetPlayerPed(-1), false))
             then
+		if(RichPresence == true) then
+                    SetRichPresence("Going " .. math.ceil(spd) .. " " .. type)
+                elseif (RichPresence == false) then
+                    SetRichPresence(nil)
+                end
                 if(spd > legalSpeed)then
                     onScreen("~r~" .. math.ceil(spd))
                         if(warningSpeedMsg == true)then
