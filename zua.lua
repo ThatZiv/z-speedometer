@@ -1,4 +1,4 @@
--- Made by Zua @ https://github.com/thatziv/z-speedometer -- Discord: http://zivinity.cf/discord
+-- Made by Zua @ https://github.com/thatziv/z-speedometer -- Discord: http://zavaar.cf/discord
 
 -----------------------------USER--CONFIG-----------------------------------------------
 local locationOnscreen = 'bottom-right' --[[ Types -> 'bottom-left', 'bottom-right', 'top-right' of the screen ]]
