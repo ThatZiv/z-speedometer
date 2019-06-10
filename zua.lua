@@ -60,11 +60,11 @@ end
 Citizen.CreateThread(function()
 	while true do
         Citizen.Wait(0)
-        local spd = GetEntitySpeed(GetVehiclePedIsIn(GetPlayerPed(-1), false))*2.2369
+        local spd = 0
         if(mph == true)then
-            local spd = GetEntitySpeed(GetVehiclePedIsIn(GetPlayerPed(-1), false))*2.2369
+            spd = GetEntitySpeed(GetVehiclePedIsIn(GetPlayerPed(-1), false))*2.2369
         else
-            local spd = GetEntitySpeed(GetVehiclePedIsIn(GetPlayerPed(-1), false))*3.6
+            spd = GetEntitySpeed(GetVehiclePedIsIn(GetPlayerPed(-1), false))*3.6
         end
             if(IsPedInAnyVehicle(GetPlayerPed(-1), false))
             then
